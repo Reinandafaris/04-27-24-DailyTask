@@ -34,13 +34,14 @@ const UserPhoto = () => {
           <span className="block text-sm text-gray-900 dark:text-white">
             {memberList.length === 0
               ? "Loading..."
-              : memberList[0].name}
+              : memberList[20].name}
           </span>
           <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">
-            {memberList.length === 0
+            {/* {memberList.length === 0
               ? "Loading..."
-              : memberList[0].name.substring(0, 5)}
-            @mail.com
+              : memberList[20].name.substring(0, 5)}
+            @mail.com */}
+            Faris@mail.com
           </span>
         </div>
         <ul className="py-2" aria-labelledby="user-menu-button">

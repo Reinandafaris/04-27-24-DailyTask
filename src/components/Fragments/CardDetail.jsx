@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logoImg from "../../assets/images/Group 7.png";
+import logoFemale from "../../assets/images/user-female.png";
 import { getMemberById } from "../../services/member.services";
 import { Link } from "react-router-dom";
 import Spinner from "../Elements/Spinner";
@@ -22,7 +23,9 @@ const CardDetail = (props) => {
         <a href="#">
           <img
             className="rounded-t-lg object-cover"
-            src={logoImg}
+            src={
+              memberDetail.gender === "female" ? logoFemale : logoImg
+            }
             alt=""
           />
         </a>
